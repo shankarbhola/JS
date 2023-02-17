@@ -1,0 +1,91 @@
+<!--
+    JSON
+    ****
+        JSON stands for Java Script Object Notation
+
+        JSON also called as JavaScript Objets
+
+        JSON, used to transfer the data over the network
+
+        JSON is light weight
+
+        Syntax
+        ******
+         Objects --- {}
+
+         Arrays --- []
+
+         data --- key & value pairs
+
+                key & value separated by using ":" 
+
+                key & value pairs by using ","
+-->
+
+<!--
+<script>
+    let obj = {
+        "sub_one" : "Angular",
+        "sub_two" : "NodeJS",
+        "sub_three" : "MongoDB"
+    };
+    console.log(
+        obj.sub_one,
+        obj.sub_two,
+        obj.sub_three       //Angular NodeJS MongoDB
+    );
+</script>
+-->
+<!--
+<script>
+    let obj = {
+        sub_one : "ReactJS",
+        sub_two : "NodeJS",
+        sub_three : "MongoDB"
+    };
+    //for....in loop
+    for(let key in obj){
+        console.log(key , typeof key, obj[key]);
+    }
+</script>
+-->
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        100 : 200
+    };
+    console.log(obj);       //{100: 200, key1: 'Hello_1'}
+
+    //if key is string --- "." / []
+    // if any other datatypes ---- []
+
+    console.log(obj.key1, obj["key1"], obj[100]);       //Hello_1 Hello_1 200
+
+</script>
+-->
+<!--
+<script>
+    let obj = {
+        key1 : "Hello1",
+        100 : 200,
+        true : false,
+        undefined : undefined,
+        null : null,
+        "100n" : 200n
+    };
+    console.log(obj["key1"], obj[100], obj[true], obj[undefined], obj[null], obj[100n]);  //Hello1 200 false undefined null 200n
+
+</script>
+-->
+
+<script>
+    console.log ( typeof {});       //object
+</script>
+
+
+
+
+
+
+

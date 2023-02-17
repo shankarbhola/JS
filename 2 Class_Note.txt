@@ -1,0 +1,146 @@
+introduction
+************
+        -Java is the scripting language
+        - javascript Released by Netscape
+        - current version of javascript is ES13
+        - ES Stands for ECMA script
+        - javascript used to build the
+                1) Angular
+
+                2) React
+                
+                3) NodeJS
+
+                4) VueJS
+
+                --------
+
+                --------
+        
+        - javascript used to convert the static webpage to dynamic webpage 
+        
+        - we will save the javascriptfile with ".js" extension
+        
+        - <script> tag, used to include the javascript to the webpages
+        
+        - visual studio code is suggestable IDE to build the javascript applications
+
+        - visual studio code IDE released by Microsoft and open source IDE
+
+        - we eill execute javascript in 2 ways.
+                        1) intrepreter
+
+                        2) node tool
+
+        - intrepreter present in browser engine
+
+        - node tool present in node NodeJS
+
+        - by default javascript execution is synchronous execution.
+
+        - code will execute line by line
+
+        - javascript is the Object based Scripting language
+
+        - vendor provides the predefined Objects
+
+                Ex.     
+                        window
+
+                        document
+
+                        console (used to debug the js applications)
+
+                        Date
+
+                        Time
+
+Installation of Softwares
+*************************
+
+1) download & install NodeJS
+
+2)  download & install Visual studio code
+
+
+Execution of JavaScript
+***********************
+
+> node demo.js
+        automatically we can execute demo.js file with node tool
+
+
+Variables
+*********
+        - Variables are use to "store" the data
+                Ex.
+                        string 
+
+                        number 
+
+                        boolean
+
+                        arrays
+
+                        ------
+                        ------
+        - we can declare the Variables in 3 ways.
+
+                1) Var
+
+                2) let
+
+                3) const
+        - let & const keywords introduced in ES6 version
+
+        - variable declaration should contain 
+
+                a-z
+
+                A-Z 
+
+                0-9
+
+                $
+                _
+
+        - Variables should not starts with digits.
+
+Syntax
+******
+        var/let/const Variablename = value
+
+Ex.
+   var msg = "Welcome to JavaScript";
+
+
+datatypes
+*********
+    datatypes identifying the type of data ina a variables 
+
+    upto ES13, we have following datatypes
+
+    1) number
+        - decimal
+
+        - hexadecimal
+
+        - octal
+
+        - binary
+
+        - double
+
+    2) string (collection of characters)
+
+
+    3) boolean (true / false)
+
+    4) undefined
+
+    5) null
+
+    6) bigint
+
+    7) symbol
+

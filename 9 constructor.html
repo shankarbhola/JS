@@ -1,0 +1,95 @@
+<!--
+    constructor function
+    ********************
+    collection of variables and functions called as classes
+
+    in javascript we will create classes by using constructor functions
+
+    in constructor functions all the members should start with "this" keywors
+
+    we can create object by using new keyword
+-->
+<!--
+<script>
+    function class_one(){
+        this.var_one = "Hello_1";
+        this.var_two = "Hello_2";
+        this.var_three = "Hello_3";
+    }    
+    let obj = new class_one();
+    console.log(obj.var_one,obj.var_two,obj.var_three);
+</script>
+-->
+<!--
+<script>
+    function class_one(arg1,arg2,arg3){
+        this.var_one = arg1;
+        this.var_two= arg2;
+        this.var_three = arg3;
+    }
+    let obj1 = new class_one("Angular","NodeJS","MongoDB");
+    console.log(obj1.var_one,obj1.var_two,obj1.var_three);      //Angular NodeJS MongoDB
+
+    let obj2 = new class_one("ReactJS","NodeJS","MongoDB");
+    console.log(obj2.var_one,obj2.var_two,obj2.var_three);      //ReactJS NodeJS MongoDB
+</script>
+-->
+<!--
+<script>
+    function class_one(){
+        this.fun_one = function(){
+            return "hello_1";
+        }
+        
+        this.fun_two = function(){
+            return "hello_2";
+        }
+
+        this.fun_three = function(){
+            return "hello_3";
+        }
+
+    }
+    let obj1 = new class_one();
+    console.log(obj1.fun_one(),obj1.fun_two(),obj1.fun_three());        //hello_1 hello_2 hello_3
+</script>
+-->
+<!--
+<script>
+    function class_one(){
+        this.var_one = "hello_1";
+        this.fun_one = function(){
+            return this.var_one;
+        }
+    }
+    let obj = new class_one();
+    console.log(obj.fun_one());     //hello_1
+</script>
+-->
+<!--
+<script>
+    function class_one(){
+
+    }
+    class_one.prototype.var_one = "hello_1";
+    class_one.prototype.var_two = "hello_2";
+    class_one.prototype.var_three = "hello_3";
+
+    let obj = new class_one();
+    console.log(obj.var_one,obj.var_two,obj.var_two);       //hello_1 hello_2 hello_2
+</script>
+-->
+<!--
+<script>
+    function class_one(){
+
+    }
+    class_one.prototype.var_one = "Hello_1";
+    class_one.prototype.fun_one = function(){
+        return "Hello_2";
+    }
+
+    let obj = new class_one();
+    console.log(obj.var_one,obj.fun_one());     //Hello_1 Hello_2
+</script>
+-->

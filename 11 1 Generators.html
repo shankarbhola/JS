@@ -1,0 +1,57 @@
+<!--
+    Generators 
+    **********
+    - Generators "controls" the "flow" of execution
+
+    - generators functions prefix with "*"
+
+    - all the statements in function prefix with "yield" keyword
+
+    - ES9
+
+    - Generators returns "cursor" mechanism
+
+    - through "cursor" , we will control "flow" of execution
+-->
+<!--
+<script>
+    function *fun_one(){
+        yield "hello_1";
+        yield "hello_2";
+        yield "hello_3";
+        yield "hello_4";
+        yield "hello_5";
+    }
+
+    let cursor = fun_one();
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+
+</script>
+-->
+<!--
+<script>
+    function * fun_one(){
+        yield "hello_1";
+    }
+
+    function * fun_two(){
+        yield "hello_2";
+    }
+
+    function * main(){
+        yield *fun_one();
+        yield *fun_two();
+        yield "Hello_3";
+    }
+
+    let cursor = main();
+    for(let i=0;i<3;i++){
+        console.log(cursor.next());
+    }
+</script>
+-->

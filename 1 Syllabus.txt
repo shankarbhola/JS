@@ -1,0 +1,161 @@
+Syllabus
+*********
+
+1) introduction to javascript
+
+        - scripting language
+
+        - netscape
+
+        - ES13
+
+        - Angular, React, Node, VueJS,........
+
+
+
+2) installation of s/w
+
+
+3) architecture of javascript engine
+
+
+4) variables
+
+        var, let and const
+
+        variable hoisting 
+
+
+5) loops
+
+        while()
+
+        do....while()
+
+        for()
+
+        forEach()
+
+        for....of()
+
+        for....in()
+
+
+6) operators
+
+
+7) datatypes
+
+         number
+
+         string
+
+         boolean
+
+         undefined
+
+         null
+
+         bigint
+
+         symbol
+
+
+8) problem solving skills
+
+
+9) functions
+
+        Arrow functions
+
+
+10) Array manipulations
+
+        50+ functions
+
+        map()
+
+        filter()
+
+        reduce()
+
+        reduceRight()
+
+        substr()
+
+        substring()
+
+        ------
+        ------
+        ------
+
+
+11) JSON(java script object notation)
+
+        JSON Server
+
+        REST API CALLS
+
+                GET
+
+                POST
+
+                PUT
+
+                DELETE
+
+        Postman
+
+
+12) AJAX Calls / Asynchronous Calls
+
+        1) JQuery 
+
+        2) XMLHttpRequest
+
+
+13) Error Handling
+ 
+        try
+
+        catch
+
+
+14) Debouncing
+
+
+15) Throttling
+
+
+16) Events Handling
+
+        Event Bubbling
+
+        Enent capturing
+
+
+17) Regular Expressions
+        
+        validations
+
+
+18) call(), applyt() and bind() functions
+
+
+19) CallBacks
+
+        CallBack Hell
+
+
+20) promises
+ 
+        async & await keywords
+
+
+21) Debugging
+
+
+22) Closoures
+
+
+23) Prototype & prototype chaining
