@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <div>Division 1</div>
+    <div>Division 2</div>
+    <p>Paragraph 4</p>
+    <div>Division 3</div>
+</body>
+<script>
+    let firstParagraph = document.querySelector("p");
+    firstParagraph.style.color = "red";
+
+    let allParagraph = document.querySelectorAll("p");
+    for(let p of allParagraph){
+        p.style.color = "yellow";
+    }
+
+
+    let firstDiv = document.querySelector("div");
+    firstDiv.style.color = "green";
+
+    let allDiv = document.querySelectorAll("div");
+    for(div of allDiv){
+        div.style.backgroundColor = "green";
+    }
+</script>
+</html>
