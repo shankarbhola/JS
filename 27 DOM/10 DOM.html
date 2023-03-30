@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <strong>Hello,Welcome to element</strong>
+    </div>
+</body>
+<script>
+    let h1 = document.createElement("h1");
+    h1.textContent = "Data added Dynamically";
+
+    let div = document.querySelector("div");
+    let strong = document.querySelector("strong");
+    div.replaceChild(h1,strong);
+
+    let em = document.createElement("em");
+    em.textContent = "Emphasized Text";
+    div.replaceChild(em,h1);
+</script>
+</html>
