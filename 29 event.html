@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        #grandparent{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            text-align: center;
+            margin: 20px auto;
+        }
+        #parent{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin-left: 20px;
+        }
+        #child{
+            width: 100px;
+            height: 100px;
+            border: 1px solid yellowgreen;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        Grand Parent
+        <div id="parent">
+            Parent
+            <div id="child">
+                Child
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script>
+    //Event Bubbling
+    let grandparent = document.getElementById("grandparent");
+    let parent = document.getElementById("parent");
+    let child = document.getElementById("child");
+    //getElementById used to implement Event Bubbling
+    
+
+    grandparent.addEventListener("click",()=>{
+        console.log("Grand Parent");
+    });
+    parent.addEventListener("click",(/*event*/)=>{
+      //  event.stopPropagation();    //Relation break
+        console.log("Parent");
+    });
+    child.addEventListener("click",()=>{
+        console.log("Child");
+    });
+    
+    //Propagation of events from down to up called as Event Bubbling
+</script> -->
+<script>
+    //Event Capturing
+    let grandparent = document.querySelector("#grandparent");
+    let parent = document.querySelector("#parent");
+    let child = document.querySelector("#child");
+
+    grandparent.addEventListener("click",()=>{console.log("GrandParent");},true);
+    parent.addEventListener("click",()=>{console.log("Parent");},true);
+    child.addEventListener("click",()=>{console.log("Child");},true);
+</script>
+
+</html>

@@ -159,3 +159,7 @@ Syllabus
 
 
 23) Prototype & prototype chaining
+
+24) Classes
+
+25) Try & Catch Block
