@@ -1,0 +1,89 @@
+<!--
+    anonymou function
+    *****************
+        - the function without name is called as anonymous function
+        
+        - anonymous functions always called as arrow function/lambda functions/callback functions
+
+        - we will represent arrow functions with "=>" symbol
+
+        - "=>" introduced in ES6
+
+    Syntax
+    ******
+    1) function defination
+
+    2) function calling
+
+    function defination
+    ******************
+    var/let/const variablename = (arg1,arg2,arg3,.....argn)=>{
+        //business logic
+    }    
+
+    function calling
+    ****************
+    variablename(param1,param2,param3,....paramn);
+
+-->
+<!--
+<script>
+    let fun_one = ()=>{
+        return "Welcome to arrow functions";
+    }
+    console.log(fun_one());     //Welcome to arrow functions
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = ()=> "Hello"; //if we have only one line of code {} & return statements are optional
+    console.log(fun_one());     //Hello   
+</script>
+-->
+<!--
+<script>
+    let fun_one = (arg1,arg2,arg3)=>{
+        console.log(arg1,arg2,arg3);
+    };
+    fun_one("Angular13", "NodeJS","MongoDB");       //Angular13 NodeJS MongoDB
+    fun_one("React", "NodeJS","MongoDB");       //React NodeJS MongoDB
+    fun_one("VueJS", "NodeJS","MongoDB");       //VueJS NodeJS MongoDB
+    fun_one();  //undefined undefined undefined
+    fun_one(undefined,"hello_1");       //undefined 'hello_1' undefined
+    fun_one(null,null,null);        //null null null
+</script>
+-->
+<!--
+<script>
+    let fun_one = ()=>{
+        return "hello";
+    };               
+    console.log(fun_one);       //def
+</script>
+-->
+<!--
+<script>
+    let fun_one = ()=>{
+        return ()=>{
+            return "Hello";
+        }
+    };
+    console.log( fun_one );         //def of outer arrow function
+    console.log( fun_one() );        //def of inner arrow function
+    console.log( fun_one()() );      //Hello
+</script>
+-->
+
+<script>
+   let fun_one = (arg1,arg2,arg3)=>{
+    console.log(arg1(),arg2(),arg3());
+    }
+    fun_one(()=>{
+        return "Hello_1";
+    },()=>{
+        return "Hello_2";
+    },()=>{
+        return "Hello_3";
+    });
+</script>

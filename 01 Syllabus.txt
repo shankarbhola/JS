@@ -163,4 +163,8 @@ Syllabus
 24) Classes
 
 25) Exception
+<<<<<<< HEAD
         Try & Catch Block 
+=======
+        Try & Catch Block 
+>>>>>>> 90e0769 (rename)
